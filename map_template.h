@@ -37,10 +37,9 @@ public:
         this->id=new ID[old.size];
         this->size=old.size;
         this->cur=old.cur;
-
-        copy(old.data,old.data+old.curr_size,this->data);
         for(unsigned int i=0;i<old.cur;i++){
-            this->key[i]=old.key[i];
+            this->data[i]=old.data[i];
+            this->id[i]=old.id[i];
         }
         return *this;
     }

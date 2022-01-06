@@ -14,9 +14,9 @@ int main(void)
 	Database.Add(730505129,Employee("Anna Zaradna","secretary",32)); 	//Add third employee: name: Anna Zaradna, position: secretary, age: 32
 
 	cout << Database << endl;							//Print databese
-
+	
 	map_template<ID,Employee> NewDatabase = Database;	//Make a copy of database
-/*	
+/*
 	Employee* pE;
 	pE = NewDatabase.Find(510212881);					//Find employee using its ID
 	pE->Position = "salesman";							//Modify the position of employee
