@@ -4,11 +4,10 @@
 #include<string>
 #include<iostream>
 class Employee{
-private:
-    std::string name;
-    std::string position;
-    unsigned int age;
 public:
+    std::string Name;
+    std::string Position;
+    unsigned int Age;
     Employee(std::string a="",std::string b="",unsigned int c=0);//konstruktor
     ~Employee();//destruktor
     Employee(const Employee &old_obj);//konstruktor kopiujacy

@@ -21,10 +21,14 @@ public:
         delete[] data;
     }
     map_template(const map_template &old){
-        this->id=old.id;
-        this->data=old.data;
+        this->id=new ID[old.size];
+        this->data=new DATA[old.size];
         this->size=old.size;
         this->cur=old.cur;
+        for(unsigned int i=0;i<old.cur;i++){
+            this->data[i]=old.data[i];
+            this->id[i]=old.id[i];
+        }
     }
     map_template &operator=(const map_template &old){
         if(this==&old)
@@ -62,13 +66,20 @@ public:
         this->cur++;
     }
     friend std::ostream &operator<<(std::ostream &s,const map_template &temp){
-        for(int i=0;i<temp.cur;i++){
+        for(unsigned int i=0;i<temp.cur;i++){
             s<<"\n";
             s<<temp.data[i];
             s<<"ID: "<<temp.id[i]<<"\n";
         }
         return s;
     }
+    DATA*  Find(ID p){
+        for(unsigned int i=0;i<this->cur;i++)
+            if(this->id[i] == p)
+            return &this->data[i];
+        return NULL;
+    }
+    
 
 
 };
