@@ -1,8 +1,6 @@
 #ifndef MAP_TEMPLATE_H
 #define MAP_TEMPLATE_H
-
 #include<iostream>
-
 template<class ID,class DATA>
 class map_template{
 private:
