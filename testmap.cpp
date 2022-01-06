@@ -6,6 +6,7 @@ using namespace std;
 
 int main(void)
 {
+	/*
 	typedef unsigned int ID; 							//Identification number of Employee
 	map_template<ID,Employee> Database;					//Database of employees
 
@@ -26,4 +27,5 @@ int main(void)
 	Database = NewDatabase;								//Update original database
 	
 	cout << Database << endl;							//Print original databese
+	*/
 };
