@@ -22,9 +22,10 @@ Employee& Employee::operator=(const Employee &old){
     this->age=old.age;
     return *this;
 }
-
-void Employee::show(){
-    std::cout<<this->name<<std::endl;
-    std::cout<<this->position<<std::endl;
-    std::cout<<age<<std::endl;
+std::ostream &operator<<(std::ostream &s,const Employee &c){
+    s<<"Name: "<<c.name<<"\n";
+    s<<"Position: "<<c.position<<"\n";
+    s<<"Age: "<<c.age<<"\n";
+    return s;
 }
+

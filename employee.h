@@ -13,8 +13,8 @@ public:
     ~Employee();//destruktor
     Employee(const Employee &old_obj);//konstruktor kopiujacy
     Employee& operator=(const Employee &old);//Copy assignment operator
-
-    void show();
+    friend std::ostream &operator<<(std::ostream &s,const Employee &c);
+    
 
 };
 
