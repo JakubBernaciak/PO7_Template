@@ -12,7 +12,7 @@ int main(void)
 	Database.Add(761028073,Employee("Jan Kowalski","salesman",28)); 	//Add first employee: name: Jan Kowalski, position: salseman, age: 28,
 	Database.Add(510212881,Employee("Adam Nowak","storekeeper",54)); 	//Add second employee: name: Adam Nowak, position: storekeeper, age: 54
 	Database.Add(730505129,Employee("Anna Zaradna","secretary",32)); 	//Add third employee: name: Anna Zaradna, position: secretary, age: 32
-	cout<<"Wydruk datebase:";
+	cout<<"Datebase:";
 	cout << Database << endl;							//Print databese
 
 	map_template<ID,Employee> NewDatabase = Database;	//Make a copy of database
