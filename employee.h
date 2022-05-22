@@ -8,10 +8,10 @@ public:
     std::string Name;
     std::string Position;
     unsigned int Age;
-    Employee(std::string a="",std::string b="",unsigned int c=0);//konstruktor
-    ~Employee();//destruktor
-    Employee(const Employee &old_obj);//konstruktor kopiujacy
-    Employee& operator=(const Employee &old);//Copy assignment operator
+    Employee(std::string a="",std::string b="",unsigned int c=0);
+    ~Employee();
+    Employee(const Employee &old_obj);
+    Employee& operator=(const Employee &old);
     friend std::ostream &operator<<(std::ostream &s,const Employee &c);
     
 
